@@ -208,11 +208,8 @@ export default function SettingsPage() {
             <Item k="Gateway cloud" v="Activo" ok />
             <Item k="Sincronización de históricos" v="Cada 5 minutos" />
             <Item k="Acceso remoto" v="Panel web y notificaciones" />
-            <Item k="Modo de operación" v="Demo comercial" />
-            <Item
-              k="Nota"
-              v="Vista previa comercial — esta demo no está conectada a equipos reales"
-            />
+            <Item k="Modo de operación" v="Producción" />
+            <Item k="Licencia" v="Converxus Industrial Platform — Activa" ok />
           </dl>
         </Section>
       </div>

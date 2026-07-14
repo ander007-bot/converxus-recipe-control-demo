@@ -23,7 +23,7 @@ export default function Alarms() {
   const active = alarms.filter((a) => a.status === 'Activa').length;
 
   const handleAck = (code: string) => {
-    acknowledgeAlarm(code, userEmail ?? 'comercial@converxus.demo');
+    acknowledgeAlarm(code, userEmail ?? 'comercial@converxus.com');
     notify(`Alarma ${code} reconocida por ${userEmail}`, 'success');
   };
 

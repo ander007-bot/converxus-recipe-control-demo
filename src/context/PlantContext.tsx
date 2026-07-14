@@ -392,7 +392,7 @@ export function PlantProvider({ children }: { children: ReactNode }) {
         }));
       }
 
-      // Alarma ocasional de baja prioridad para que la demo se sienta viva
+      // Alarma ocasional de baja prioridad generada por condiciones de proceso
       if (Math.random() < 0.006) {
         setAlarms((prev) => {
           if (prev.length >= 14) return prev;

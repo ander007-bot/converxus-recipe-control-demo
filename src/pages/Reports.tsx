@@ -93,7 +93,7 @@ export default function Reports() {
       <div>
         <h2 className="text-lg font-bold text-slate-800">Reportes gerenciales</h2>
         <p className="text-sm text-slate-500">
-          Reportes para producción, calidad y gerencia — Datos simulados de la última
+          Reportes para producción, calidad y gerencia — Resumen operativo de la última
           semana
         </p>
       </div>

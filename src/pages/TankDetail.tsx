@@ -57,7 +57,7 @@ export default function TankDetail() {
       notify('No hay alarmas activas asociadas a este tanque', 'info');
       return;
     }
-    acknowledgeAlarm(tankAlarm.code, userEmail ?? 'comercial@converxus.demo');
+    acknowledgeAlarm(tankAlarm.code, userEmail ?? 'comercial@converxus.com');
     notify(`Alarma ${tankAlarm.code} reconocida`, 'success');
   };
 

@@ -1,8 +1,8 @@
 import { createContext, useCallback, useContext, useState, type ReactNode } from 'react';
 
-const SESSION_KEY = 'converxus_demo_session';
-export const DEMO_EMAIL = 'comercial@converxus.demo';
-export const DEMO_PASSWORD = 'Converxus2026*';
+const SESSION_KEY = 'converxus_session';
+export const APP_EMAIL = 'comercial@converxus.com';
+export const APP_PASSWORD = 'Converxus2026*';
 
 interface AuthContextValue {
   isAuthenticated: boolean;
@@ -19,9 +19,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   );
 
   const login = useCallback((email: string, password: string) => {
-    if (email.trim().toLowerCase() === DEMO_EMAIL && password === DEMO_PASSWORD) {
-      localStorage.setItem(SESSION_KEY, DEMO_EMAIL);
-      setUserEmail(DEMO_EMAIL);
+    if (email.trim().toLowerCase() === APP_EMAIL && password === APP_PASSWORD) {
+      localStorage.setItem(SESSION_KEY, APP_EMAIL);
+      setUserEmail(APP_EMAIL);
       return true;
     }
     return false;

@@ -120,11 +120,6 @@ export default function Layout() {
       )}
 
       <div className="flex min-w-0 flex-1 flex-col">
-        {/* Franja de demo */}
-        <div className="bg-brand-900 px-4 py-1.5 text-center text-[11px] font-medium tracking-wide text-cyan-200">
-          Vista previa comercial — Datos simulados para presentación técnica
-        </div>
-
         {/* Header */}
         <header className="flex items-center gap-3 border-b border-slate-200 bg-white px-4 py-3">
           <button

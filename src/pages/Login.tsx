@@ -19,7 +19,7 @@ export default function Login() {
     if (login(email, password)) {
       navigate('/', { replace: true });
     } else {
-      setError('Credenciales incorrectas. Verifique el correo y la contraseña demo.');
+      setError('Credenciales incorrectas. Verifique el correo y la contraseña.');
     }
   };
 
@@ -57,7 +57,7 @@ export default function Login() {
                   id="email"
                   type="email"
                   className="input pl-9"
-                  placeholder="comercial@converxus.demo"
+                  placeholder="usuario@empresa.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -99,7 +99,7 @@ export default function Login() {
 
           <div className="mt-5 flex items-center justify-center gap-1.5 border-t border-slate-100 pt-4 text-xs text-slate-400">
             <ShieldCheck className="h-3.5 w-3.5" />
-            Acceso demo comercial — datos simulados
+            Acceso restringido — solo personal autorizado
           </div>
         </div>
 

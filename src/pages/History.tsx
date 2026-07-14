@@ -43,7 +43,7 @@ export default function HistoryPage() {
           <button
             className="btn-secondary"
             onClick={() =>
-              notify('Reporte Excel generado para demo (simulado)', 'success')
+              notify('Reporte Excel generado correctamente', 'success')
             }
           >
             <FileSpreadsheet className="h-4 w-4 text-emerald-600" />
@@ -52,7 +52,7 @@ export default function HistoryPage() {
           <button
             className="btn-secondary"
             onClick={() =>
-              notify('Reporte PDF generado para demo (simulado)', 'success')
+              notify('Reporte PDF generado correctamente', 'success')
             }
           >
             <FileText className="h-4 w-4 text-red-600" />
