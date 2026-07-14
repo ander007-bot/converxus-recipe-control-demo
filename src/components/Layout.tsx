@@ -41,7 +41,7 @@ function Clock() {
 }
 
 export default function Layout() {
-  const { userEmail, logout } = useAuth();
+  const { userEmail, userName, logout } = useAuth();
   const { alarms } = usePlant();
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -145,7 +145,11 @@ export default function Layout() {
               Sistema: Operativo
             </span>
             <Clock />
-            <span className="hidden max-w-48 truncate text-xs text-slate-500 xl:inline">
+            <span
+              className="hidden max-w-56 truncate text-right text-xs leading-tight text-slate-500 xl:inline-block"
+              title={userEmail ?? undefined}
+            >
+              <span className="block font-semibold text-slate-600">{userName}</span>
               {userEmail}
             </span>
             <button onClick={handleLogout} className="btn-secondary !px-2.5 !py-1.5">
